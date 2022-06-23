@@ -1,0 +1,26 @@
+.apag-image {
+  position: relative;
+}
+.apag-image button[aria-lable=play] {
+  background-color: red;
+}
+.apag-image .apag-button {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: solid 3px #fff;
+}
+.apag-image .apag-button i {
+  line-height: 30px;
+}
+.apag-image .apag-button:focus {
+  outline-offset: 3px;
+}
