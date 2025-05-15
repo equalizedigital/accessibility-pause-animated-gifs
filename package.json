@@ -14,7 +14,7 @@
     "lint:js": "wp-scripts lint-js",
     "lint:js:fix": "wp-scripts lint-js --fix",
     "lint:sass": "wp-scripts lint-style",
-	"lint:sass:fix": "wp-scripts lint-style --fix"
+    "lint:sass:fix": "wp-scripts lint-style --fix"
   },
   "husky": {
     "hooks": {
@@ -22,15 +22,15 @@
     }
   },
   "lint-staged": {
-	"*.{js,jsx}": [
-	  "npm run lint:js"
-	],
-	"*.{css,scss}": [
-	  "npm run lint:sass"
-	],
-	"*.{php}": [
-	  "npm run lint:php"
-	]
+    "*.{js,jsx}": [
+      "npm run lint:js"
+    ],
+    "*.{css,scss}": [
+      "npm run lint:sass"
+    ],
+    "*.{php}": [
+      "npm run lint:php"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -49,5 +49,8 @@
     "sass-loader": "^16.0.3",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gifa11y": "^2.1.0"
   }
 }

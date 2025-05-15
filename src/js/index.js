@@ -1,4 +1,9 @@
+import Gifa11y from 'gifa11y';
+
 ( function() {
-	// eslint-disable-next-line no-console
-	console.log( 'This code runs immediately!' );
+	const options = {
+		...window?.edapag?.options,
+	};
+
+	window.gifa11y = new Gifa11y( options );
 }() );
