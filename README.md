@@ -1,6 +1,5 @@
 [![CS](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/cs.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/cs.yml)
-[![Lint](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-php.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-php.yml)
-[![Lint](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-js.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-js.yml)
+[![Lint](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint.yml)
 [![Security](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/security.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/security.yml)
 
 # Equalize Digital Accessibility Pause Animated GIFs
