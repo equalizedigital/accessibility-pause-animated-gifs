@@ -61,11 +61,6 @@ module.exports = {
 			},
 		],
 	},
-	resolve: {
-		alias: {
-			'gifa11y/dist/css/gifa11y.min.css': path.resolve( __dirname, 'src/css/empty.css' ),
-		},
-	},
 	plugins: [
 		new webpack.ProgressPlugin(),
 		new CleanWebpackPlugin(),
