@@ -115,12 +115,12 @@ class Settings {
 			],
 			'buttonIconColor'       => [
 				'type'        => 'color',
-				'default'     => 'white',
+				'default'     => '#ffffff',
 				'description' => __( 'Color of button icons.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonFocusColor'      => [
 				'type'        => 'color',
-				'default'     => '#00e7ffad',
+				'default'     => '#00e7ff',
 				'description' => __( 'Focus color for buttons.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonIconSize'        => [
@@ -252,30 +252,30 @@ class Settings {
 	public function render_field( $args ) {
 		$options = get_option( 'edapag_options', [] );
 		$value   = isset( $options[ $args['label_for'] ] ) ? $options[ $args['label_for'] ] : $args['default'];
-		
+
 		switch ( $args['type'] ) {
 			case 'checkbox':
-				echo '<input type="checkbox" 
+				echo '<input type="checkbox"
                     id="' . esc_attr( $args['label_for'] ) . '"
                     name="edapag_options[' . esc_attr( $args['label_for'] ) . ']"
                     value="1"
                     ' . checked( $value, true, false ) . '>';
 				break;
 			case 'color':
-				echo '<input type="color" 
+				echo '<input type="color"
                     id="' . esc_attr( $args['label_for'] ) . '"
                     name="edapag_options[' . esc_attr( $args['label_for'] ) . ']"
                     value="' . esc_attr( $value ) . '">';
 				break;
 			case 'textarea':
-				echo '<textarea 
+				echo '<textarea
                     id="' . esc_attr( $args['label_for'] ) . '"
                     name="edapag_options[' . esc_attr( $args['label_for'] ) . ']"
                     rows="3"
                     cols="50">' . esc_textarea( $value ) . '</textarea>';
 				break;
 			default:
-				echo '<input type="text" 
+				echo '<input type="text"
                     id="' . esc_attr( $args['label_for'] ) . '"
                     name="edapag_options[' . esc_attr( $args['label_for'] ) . ']"
                     value="' . esc_attr( $value ) . '">';
@@ -445,11 +445,11 @@ class Settings {
 			],
 			'buttonIconColor'       => [
 				'type'    => 'color',
-				'default' => 'white',
+				'default' => '#ffffff',
 			],
 			'buttonFocusColor'      => [
 				'type'    => 'color',
-				'default' => '#00e7ffad',
+				'default' => '#00e7ff',
 			],
 			'buttonIconSize'        => [
 				'type'    => 'text',
