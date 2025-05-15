@@ -45,7 +45,6 @@ class AccessibilityPauseAnimatedGifs {
 	 */
 	public function boot() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
-		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ] );
 
 		// Initialize admin settings.
 		if ( is_admin() ) {
@@ -106,20 +105,6 @@ class AccessibilityPauseAnimatedGifs {
 			[
 				'options' => wp_parse_args( $options, $default_options ),
 			]
-		);
-	}
-
-	/**
-	 * Enqueue styles.
-	 *
-	 * @return void
-	 */
-	public function enqueue_styles() {
-		wp_enqueue_style(
-			'accessibility-pause-animated-gifs',
-			EDAPAD_PLUGIN_URL . 'build/css/frontend.bundle.css',
-			[],
-			EDAPAD_VERSION
 		);
 	}
 }
