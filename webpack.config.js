@@ -9,7 +9,7 @@ module.exports = {
 	mode: 'production', // development | production
 	watch: false,
 	entry: {
-		plugin: [
+		frontend: [
 			'./src/js/index.js',
 			'./src/sass/styles.scss',
 		],
