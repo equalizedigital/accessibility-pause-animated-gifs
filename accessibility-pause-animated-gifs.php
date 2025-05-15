@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Accessibility Pause Animated Gifs
- * Description: An Equalize Digital plugin.
+ * Description: Add play/pause controls to animated GIFs for better accessibility and WCAG 2.2.2 compliance. Helps users with motion sensitivity by providing controls to pause distracting animations.
  * Version: 0.0.1
  * Author: Equalize Digital
  * Author URI: https://equalizedigital.com
