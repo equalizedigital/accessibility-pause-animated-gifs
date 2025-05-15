@@ -27,6 +27,18 @@ module.exports = {
 				use: [ 'babel-loader' ],
 			},
 			{
+				test: /gifa11y\.min\.css$/,
+				include: /node_modules[\\\/]gifa11y[\\\/]dist[\\\/]css/,
+				use: [
+					{
+						loader: 'css-loader',
+						options: {
+							exportType: 'string',
+						},
+					},
+				],
+			},
+			{
 				test: /\.(s(a|c)ss)$/,
 				use: [
 					MiniCssExtractPlugin.loader,
@@ -36,9 +48,23 @@ module.exports = {
 			},
 			{
 				test: /\.css$/i,
-				use: [ MiniCssExtractPlugin.loader, 'css-loader' ],
+				exclude: /gifa11y\.min\.css$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							esModule: false,
+						},
+					},
+				],
 			},
 		],
+	},
+	resolve: {
+		alias: {
+			'gifa11y/dist/css/gifa11y.min.css': path.resolve( __dirname, 'src/css/empty.css' ),
+		},
 	},
 	plugins: [
 		new webpack.ProgressPlugin(),
