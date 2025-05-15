@@ -4,7 +4,6 @@ package-lock.json
 
 # Composer vendor directory
 vendor/
-composer.lock
 
 # PHPStorm project files
 .idea/
