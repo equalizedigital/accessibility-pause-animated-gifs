@@ -44,6 +44,36 @@ class AccessibilityPauseAnimatedGif {
 	 * @return void
 	 */
 	public function boot() {
-		// stub.
+		add_action( 'enqueue_scripts', [ $this, 'enqueue_scripts' ] );
+		add_action( 'enqueue_styles', [ $this, 'enqueue_styles' ] );
+	}
+
+	/**
+	 * Enqueue scripts.
+	 *
+	 * @return void
+	 */
+	public function enqueue_scripts() {
+		wp_enqueue_script(
+			'accessibility-pause-animated-gif',
+			EDAPAD_PLUGIN_URL . 'build/js/frontend.bundle.js',
+			[],
+			EDAPAD_VERSION,
+			true
+		);
+	}
+
+	/**
+	 * Enqueue styles.
+	 *
+	 * @return void
+	 */
+	public function enqueue_styles() {
+		wp_enqueue_style(
+			'accessibility-pause-animated-gif',
+			EDAPAD_PLUGIN_URL . 'build/css/frontend.bundle.css',
+			[],
+			EDAPAD_VERSION
+		);
 	}
 }
