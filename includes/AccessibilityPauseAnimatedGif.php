@@ -44,8 +44,8 @@ class AccessibilityPauseAnimatedGif {
 	 * @return void
 	 */
 	public function boot() {
-		add_action( 'enqueue_scripts', [ $this, 'enqueue_scripts' ] );
-		add_action( 'enqueue_styles', [ $this, 'enqueue_styles' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ] );
 	}
 
 	/**
