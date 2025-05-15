@@ -1,5 +1,5 @@
 {
-    "name": "equalizedigital/accessibility-pause-animated-gif",
+    "name": "equalizedigital/accessibility-pause-animated-gifs",
 	"version": "0.0.1",
     "authors": [
         {
@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EqualizeDigital\\AccessibilityPauseAnimatedGif\\": "includes/"
+            "EqualizeDigital\\AccessibilityPauseAnimatedGifs\\": "includes/"
         }
     },
     "config": {

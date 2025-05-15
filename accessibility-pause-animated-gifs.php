@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Accessibility Pause Animated Gif
+ * Plugin Name: Accessibility Pause Animated Gifs
  * Description: An Equalize Digital plugin.
  * Version: 0.0.1
  * Author: Equalize Digital
@@ -15,7 +15,7 @@
  * @package EqualizeDigital\AccessibilityPauseAnimatedGifs
  */
 
-namespace EqualizeDigital\AccessibilityPauseAnimatedGif;
+namespace EqualizeDigital\AccessibilityPauseAnimatedGifs;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -54,4 +54,4 @@ if ( file_exists( EDAPAD_PLUGIN_DIR . 'vendor/autoload.php' ) ) {
 	return;
 }
 
-( AccessibilityPauseAnimatedGif::get_instance() )->boot();
+( AccessibilityPauseAnimatedGifs::get_instance() )->boot();

@@ -5,7 +5,7 @@
  * @package EqualizeDigital\AccessibilityPauseAnimatedGif
  */
 
-namespace EqualizeDigital\AccessibilityPauseAnimatedGif;
+namespace EqualizeDigital\AccessibilityPauseAnimatedGifs;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,20 +15,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Main plugin class.
  */
-class AccessibilityPauseAnimatedGif {
+class AccessibilityPauseAnimatedGifs {
 
 
 	/**
 	 * Plugin instance.
 	 *
-	 * @var AccessibilityPauseAnimatedGif
+	 * @var AccessibilityPauseAnimatedGifs
 	 */
 	private static $instance = null;
 
 	/**
 	 * Get plugin instance.
 	 *
-	 * @return AccessibilityPauseAnimatedGif
+	 * @return AccessibilityPauseAnimatedGifs
 	 */
 	public static function get_instance() {
 		if ( is_null( self::$instance ) ) {
@@ -55,14 +55,14 @@ class AccessibilityPauseAnimatedGif {
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_script(
-			'accessibility-pause-animated-gif',
+			'accessibility-pause-animated-gifs',
 			EDAPAD_PLUGIN_URL . 'build/js/frontend.bundle.js',
 			[],
 			EDAPAD_VERSION,
 			true
 		);
 		wp_localize_script(
-			'accessibility-pause-animated-gif',
+			'accessibility-pause-animated-gifs',
 			'edapad',
 			[
 				'options' => [
@@ -107,7 +107,7 @@ class AccessibilityPauseAnimatedGif {
 	 */
 	public function enqueue_styles() {
 		wp_enqueue_style(
-			'accessibility-pause-animated-gif',
+			'accessibility-pause-animated-gifs',
 			EDAPAD_PLUGIN_URL . 'build/css/frontend.bundle.css',
 			[],
 			EDAPAD_VERSION
