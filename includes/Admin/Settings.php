@@ -60,27 +60,27 @@ class Settings {
 			'inheritClasses'    => [
 				'type'        => 'checkbox',
 				'default'     => true,
-				'description' => __( 'Inherit classes from parent elements.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'If canvas element should inherit the same classes as the gif.', 'accessibility-pause-animated-gifs' ),
 			],
 			'initiallyPaused'   => [
 				'type'        => 'checkbox',
 				'default'     => false,
-				'description' => __( 'Start all gifs in a paused state.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'If you want all gifs to be paused at first.', 'accessibility-pause-animated-gifs' ),
 			],
 			'sharedPauseButton' => [
 				'type'        => 'checkbox',
 				'default'     => false,
-				'description' => __( 'Use a shared pause button for all gifs.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Pausing any gif pauses all gifs.', 'accessibility-pause-animated-gifs' ),
 			],
 			'showButtons'       => [
 				'type'        => 'checkbox',
 				'default'     => true,
-				'description' => __( 'Display pause/play buttons on gifs.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Show or hide Play/Pause buttons.', 'accessibility-pause-animated-gifs' ),
 			],
 			'target'            => [
 				'type'        => 'text',
 				'default'     => '',
-				'description' => __( 'CSS selector for specific gifs to target.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Using CSS selectors, target other images like .webp (that don\'t end with .gif), for example target: \'img[src$=".webp"]\'', 'accessibility-pause-animated-gifs' ),
 			],
 		];
 
@@ -96,42 +96,37 @@ class Settings {
 			'buttonBackground'      => [
 				'type'        => 'color',
 				'default'     => '#072c7c',
-				'description' => __( 'Background color for buttons.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Select a color using the color picker.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonBackgroundHover' => [
 				'type'        => 'color',
 				'default'     => '#0a2051',
-				'description' => __( 'Background color for buttons on hover.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Select a color using the color picker.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonBorder'          => [
 				'type'        => 'text',
 				'default'     => '2px solid #fff',
-				'description' => __( 'Border styling for buttons.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Specify the style, width, and color of an element\'s border.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonBorderRadius'    => [
 				'type'        => 'text',
 				'default'     => '0%',
-				'description' => __( 'Border radius for buttons.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Switch between round and square buttons.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonIconColor'       => [
 				'type'        => 'color',
 				'default'     => '#ffffff',
-				'description' => __( 'Color of button icons.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Select a color using the color picker.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonFocusColor'      => [
 				'type'        => 'color',
 				'default'     => '#00e7ff',
-				'description' => __( 'Focus color for buttons.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Select a color using the color picker.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonIconSize'        => [
 				'type'        => 'text',
 				'default'     => '1.5rem',
-				'description' => __( 'Size of button icons.', 'accessibility-pause-animated-gifs' ),
-			],
-			'buttonIconFontSize'    => [
-				'type'        => 'text',
-				'default'     => '1rem',
-				'description' => __( 'Font size of button icons.', 'accessibility-pause-animated-gifs' ),
+				'description' => __( 'Adjust height and width of SVG.', 'accessibility-pause-animated-gifs' ),
 			],
 		];
 
@@ -311,7 +306,6 @@ class Settings {
 			'buttonIconColor'       => __( 'Button Icon Color', 'accessibility-pause-animated-gifs' ),
 			'buttonFocusColor'      => __( 'Button Focus Color', 'accessibility-pause-animated-gifs' ),
 			'buttonIconSize'        => __( 'Button Icon Size', 'accessibility-pause-animated-gifs' ),
-			'buttonIconFontSize'    => __( 'Button Icon Font Size', 'accessibility-pause-animated-gifs' ),
 
 			// Language fields.
 			'langPause'             => __( 'Language Pause', 'accessibility-pause-animated-gifs' ),
@@ -454,10 +448,6 @@ class Settings {
 			'buttonIconSize'        => [
 				'type'    => 'text',
 				'default' => '1.5rem',
-			],
-			'buttonIconFontSize'    => [
-				'type'    => 'text',
-				'default' => '1rem',
 			],
 		];
 	}
