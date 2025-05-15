@@ -63,7 +63,7 @@ class AccessibilityPauseAnimatedGifs {
 		);
 		wp_localize_script(
 			'accessibility-pause-animated-gifs',
-			'edapad',
+			'edapag',
 			[
 				'options' => [
 					'buttonBackground'      => '#072c7c',
