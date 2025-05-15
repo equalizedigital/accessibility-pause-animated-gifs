@@ -11,7 +11,6 @@ module.exports = {
 	entry: {
 		frontend: [
 			'./src/js/index.js',
-			'./src/sass/styles.scss',
 		],
 	},
 	output: {
