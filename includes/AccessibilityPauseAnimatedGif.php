@@ -61,6 +61,43 @@ class AccessibilityPauseAnimatedGif {
 			EDAPAD_VERSION,
 			true
 		);
+		wp_localize_script(
+			'accessibility-pause-animated-gif',
+			'edapad',
+			[
+				'options' => [
+					'buttonBackground'      => '#072c7c',
+					'buttonBackgroundHover' => '#0a2051',
+					'buttonBorder'          => '2px solid #fff',
+					'buttonBorderRadius'    => '50%',
+					'buttonIconColor'       => 'white',
+					'buttonFocusColor'      => '#00e7ffad',
+					'buttonIconSize'        => '1.5rem',
+					'buttonIconFontSize'    => '1rem',
+					'buttonPlayIconID'      => '',
+					'buttonPauseIconID'     => '',
+					'buttonPlayIconHTML'    => '',
+					'buttonPauseIconHTML'   => '',
+					'container'             => 'body',
+					'exclusions'            => '',
+					'gifa11yOff'            => '',
+					'inheritClasses'        => true,
+					'initiallyPaused'       => false,
+					'langPause'             => __( 'Pause animation:', 'accessibility-pause-animated-gifs' ),
+					'langPlay'              => __( 'Play animation:', 'accessibility-pause-animated-gifs' ),
+					'langPauseAllButton'    => __( 'Pause all animations', 'accessibility-pause-animated-gifs' ),
+					'langPlayAllButton'     => __( 'Play all animations', 'accessibility-pause-animated-gifs' ),
+					'langMissingAlt'        => __( 'Missing image description.', 'accessibility-pause-animated-gifs' ),
+					'langAltWarning'        => __( 'Error! Please add alt text to gif.', 'accessibility-pause-animated-gifs' ),
+					'missingAltWarning'     => true,
+					'sharedPauseButton'     => false,
+					'showButtons'           => true,
+					'showGifText'           => false,
+					'target'                => '',
+					'useDevicePixelRatio'   => false,
+				],
+			]
+		);
 	}
 
 	/**
