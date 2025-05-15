@@ -7,8 +7,7 @@
  * Author URI: https://equalizedigital.com
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: accessibility-pause-animated-gif
- * Domain Path: /languages
+ * Text Domain: accessibility-pause-animated-gifs
  * Requires at least: 6.7
  * Requires PHP: 7.4
  *
