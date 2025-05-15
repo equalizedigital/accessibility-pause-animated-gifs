@@ -1,7 +1,7 @@
-[![CS](https://github.com/equalizedigital/accessibility-checker/actions/workflows/cs.yml/badge.svg)](https://github.com/equalizedigital/accessibility-checker/actions/workflows/cs.yml)
-[![Lint](https://github.com/equalizedigital/accessibility-checker/actions/workflows/lint-php.yml/badge.svg)](https://github.com/equalizedigital/accessibility-checker/actions/workflows/lint-php.yml)
-[![Lint](https://github.com/equalizedigital/accessibility-checker/actions/workflows/lint-js.yml/badge.svg)](https://github.com/equalizedigital/accessibility-checker/actions/workflows/lint-js.yml)
-[![Security](https://github.com/equalizedigital/accessibility-checker/actions/workflows/security.yml/badge.svg)](https://github.com/equalizedigital/accessibility-checker/actions/workflows/security.yml)
+[![CS](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/cs.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/cs.yml)
+[![Lint](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-php.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-php.yml)
+[![Lint](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-js.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/lint-js.yml)
+[![Security](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/security.yml/badge.svg)](https://github.com/equalizedigital/accessibility-pause-animated-gifs/actions/workflows/security.yml)
 
 # Equalize Digital Accessibility Pause Animated GIFs
 
