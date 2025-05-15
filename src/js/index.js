@@ -22,4 +22,15 @@ import { isAnimatedGif } from './isAnimatedGif';
 			window.gifa11y = new Gifa11y(	options );
 		}
 	} );
+
+	// If there are no gifa11y-button elements on the page by this point then try
+	// to find new gifs as they may have been added or completed load after init.
+	addEventListener( 'DOMContentLoaded', () => {
+		if ( document.querySelectorAll( 'gifa11y-button' ).length === 0 ) {
+			if ( ! window.gifa11y ) {
+				window.gifa11y = new Gifa11y( options );
+			}
+			window.gifa11y.findNew();
+		}
+	} );
 }() );
