@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Composer vendor directory
+vendor/
+
+# PHPStorm project files
+.idea/
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build directories
+dist/
+build/
+
+# Environment variables
+.env
