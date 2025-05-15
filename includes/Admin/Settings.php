@@ -110,7 +110,7 @@ class Settings {
 			],
 			'buttonBorderRadius'    => [
 				'type'        => 'text',
-				'default'     => '50%',
+				'default'     => '0%',
 				'description' => __( 'Border radius for buttons.', 'accessibility-pause-animated-gifs' ),
 			],
 			'buttonIconColor'       => [
