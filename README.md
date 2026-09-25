@@ -23,9 +23,26 @@ This plugin specifically addresses:
 
 ## Installation
 
-1. Upload the plugin files to `/wp-content/plugins/accessibility-pause-animated-gifs`
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Configure the plugin settings under 'Settings > Pause Animated GIFs'
+### From a release (recommended)
+
+**Don't use the green "Code > Download ZIP" button on the repository page.** That zip is the raw source code. It doesn't include the `vendor/` (Composer) or `build/` (JavaScript) folders the plugin needs, so it won't load and no settings page will appear.
+
+1. Go to the [Releases page](https://github.com/equalizedigital/accessibility-pause-animated-gifs/releases) and download the latest `accessibility-pause-animated-gifs-vX.X.X.zip` from the **Assets** section.
+2. In WordPress, go to **Plugins > Add New Plugin > Upload Plugin**, choose the zip, and click **Install Now**. (Or unzip it into `/wp-content/plugins/`.)
+3. Activate the plugin from the **Plugins** screen.
+4. Configure it under **Settings > Pause Animated GIFs**.
+
+### From source (developers)
+
+If you clone the repository or download the source, you must install dependencies and build the assets before activating:
+
+```bash
+composer install --no-dev --optimize-autoloader
+npm install
+npm run build
+```
+
+If `vendor/autoload.php` is missing, the plugin shows an admin notice ("Please run composer install in the plugin directory.") and does not load, so its settings page won't appear.
 
 ## Features
 
@@ -71,12 +88,14 @@ Customize button text and labels for:
 ### Requirements
 
 - Node.js
+- Composer
 - WordPress 5.0+
 - PHP 7.4+
 
 ### Building
 
 ```bash
+composer install
 npm install
 npm run build
 ```
